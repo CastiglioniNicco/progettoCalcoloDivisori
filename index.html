@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcola divisori</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="text-center">
+    <div class="bg-warning">
+        <h1>SCRIPT JAVASCRIPT</h1>
+        <p>Una collezione di script Javascript</p>
+    </div>
+    
+
+    <div class="row m-5">
+        <!-- immagine -->
+        <div class="border border-warning col-sm-4 p-4">
+            <h3>COSA FA LO SCRIPT</h3>
+            <img class="d-none d-sm-block w-75 mx-auto m-3" src="./images/js.png">
+            <p>Inserisci un numero e lo script calcolerà i divisori</p>
+        </div>
+        <!-- input -->
+        <div class="border border-warning col-6 col-sm-4 p-4">
+            <h3>IL TUO INPUT</h3>
+            <form>
+                <input type="number" id="input" class="w-75">
+                <button onclick="calcDiv(), spinner()" type="button">Calcola</button>
+            </form>
+        </div>
+        <!-- risultato -->
+        <div class="border border-warning col-6 col-sm-4 p-4">
+            <h3>IL RISULTATO</h3>
+            <!-- spinner -->
+            <div id="s" class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <p id="risultato"></p>
+            <p id="divisori"></p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
